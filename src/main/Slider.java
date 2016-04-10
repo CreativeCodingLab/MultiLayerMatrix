@@ -44,7 +44,7 @@ public class Slider{
 		parent.noStroke();
 		for (int k=5; k<100; k++ ){
 			float v = (float) k/100;
-			Color c = ColorScales.getColor(v, main.SimilarityMatrix_1_4.colorScale, 1);
+			Color c = ColorScales.getColor(v, main.MultiLayerMatrix_2.colorScale, 1);
 			if (v>=val)
 				parent.fill(c.getRGB());
 			else
@@ -55,7 +55,7 @@ public class Slider{
 		//Upper range
 		Color c = new Color(0,0,0);
 		if (sSlider==1){
-			c= ColorScales.getColor(val, main.SimilarityMatrix_1_4.colorScale, 1);
+			c= ColorScales.getColor(val, main.MultiLayerMatrix_2.colorScale, 1);
 		}	
 		else if (bSlider==1){
 			c= Color.YELLOW;

@@ -8,7 +8,7 @@ import processing.core.PFont;
 public class PopupSort{
 	public int b = -1;
 	public static int s=0;
-	public SimilarityMatrix_1_4 parent;
+	public MultiLayerMatrix_2 parent;
 	public float x = 800;
 	public int y = 0;
 	public int w1 = 88;
@@ -18,7 +18,7 @@ public class PopupSort{
 	public Color cGray  = new Color(240,240,240);
 	public static String[] items={"Characters","Tribe", "Genus", "Species"}; 
 	
-	public PopupSort(SimilarityMatrix_1_4 parent_){
+	public PopupSort(MultiLayerMatrix_2 parent_){
 		parent = parent_;
 	}
 	
@@ -26,7 +26,7 @@ public class PopupSort{
 		x = x_;
 		this.checkBrushing();
 		if (b>=0)
-			main.SimilarityMatrix_1_4.popupOrder.b=-10;
+			main.MultiLayerMatrix_2.popupOrder.b=-10;
 		if (b>=0){
 			parent.fill(100);
 			parent.stroke(0);

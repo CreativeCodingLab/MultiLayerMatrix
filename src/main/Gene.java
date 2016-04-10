@@ -14,10 +14,10 @@ import java.util.TreeMap;
 import processing.core.PApplet;
 
 
-import static main.SimilarityMatrix_1_4.data;
-import static main.SimilarityMatrix_1_4.ggg;
-import static main.SimilarityMatrix_1_4.leaderSortedMap;
-import static main.SimilarityMatrix_1_4.locals;
+import static main.MultiLayerMatrix_2.data;
+import static main.MultiLayerMatrix_2.ggg;
+import static main.MultiLayerMatrix_2.leaderSortedMap;
+import static main.MultiLayerMatrix_2.locals;
 
 
 public class Gene {
@@ -30,8 +30,8 @@ public class Gene {
 	
 	public Gene(String name_, int order_){
 		name = name_;
-		iX = new Integrator(main.SimilarityMatrix_1_4.marginX,.5f,.2f);
-		iY = new Integrator(main.SimilarityMatrix_1_4.marginY,.5f,.2f);
+		iX = new Integrator(main.MultiLayerMatrix_2.marginX,.5f,.2f);
+		iY = new Integrator(main.MultiLayerMatrix_2.marginY,.5f,.2f);
 		iW = new Integrator(0,.5f,.2f);
 		iH = new Integrator(0,.5f,.2f);
 		order = order_;
@@ -307,7 +307,7 @@ public class Gene {
 			SliderDissimilarity.percent.target((float)i*60f/ggg.size());
 		}
 		long t2 = System.currentTimeMillis();
-		main.SimilarityMatrix_1_4.runningtime = (t2-t1)/1000f;
+		main.MultiLayerMatrix_2.runningtime = (t2-t1)/1000f;
 		System.out.println("total time = " +((t2-t1)/1000));
 		
 		//Second round

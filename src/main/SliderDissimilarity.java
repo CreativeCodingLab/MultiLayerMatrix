@@ -8,7 +8,7 @@ import processing.core.PApplet;
 public class SliderDissimilarity{
 	int count =0;
 	public int pair =-1;
-	public SimilarityMatrix_1_4 parent;
+	public MultiLayerMatrix_2 parent;
 	public float x=0,y=0;
 	public int w; 
 	public int u =-1;
@@ -21,7 +21,7 @@ public class SliderDissimilarity{
 	public static Integrator percent = new Integrator(100,.5f,.25f);
 
 	
-	public SliderDissimilarity(SimilarityMatrix_1_4 parent_, float initial){
+	public SliderDissimilarity(MultiLayerMatrix_2 parent_, float initial){
 		parent = parent_;
 		w= 100*ggg;
 		update();
@@ -53,7 +53,7 @@ public class SliderDissimilarity{
 		if (percent.value<99.5f){
 			int v = (parent.frameCount*10)%255;
 			float v2  =v/254f;
-			Color c = ColorScales.getColor(v2, main.SimilarityMatrix_1_4.colorScale, 1f);
+			Color c = ColorScales.getColor(v2, main.MultiLayerMatrix_2.colorScale, 1f);
 			parent.fill(c.darker().getRGB());
 			parent.noStroke();
 			parent.arc(x-16, y+10, 16, 16, 0, percent.value*PApplet.PI/50);

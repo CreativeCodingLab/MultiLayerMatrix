@@ -8,7 +8,7 @@ import processing.core.PFont;
 public class PopupOrder{
 	public int b = -1;
 	public static int s=-1;
-	public SimilarityMatrix_1_4 parent;
+	public MultiLayerMatrix_2 parent;
 	public float x = 800;
 	public int y = 0;
 	public int w1 = 88;
@@ -18,14 +18,14 @@ public class PopupOrder{
 	public Color cGray  = new Color(240,240,240);
 	public static String[] items={"Sum similarity","Reading order", "Name", "Similarity"}; 
 	
-	public PopupOrder(SimilarityMatrix_1_4 parent_){
+	public PopupOrder(MultiLayerMatrix_2 parent_){
 		parent = parent_;
 	}
 	
 	public void draw(float x_){
 		x = x_;
 		this.checkBrushing();
-		if (main.SimilarityMatrix_1_4.popupSort.b>=0)
+		if (main.MultiLayerMatrix_2.popupSort.b>=0)
 			b=-2;
 		
 		if (b>=0){
@@ -68,15 +68,15 @@ public class PopupOrder{
 		if (b<items.length){
 			s = b;
 			if (items[s].equals("Sum similarity")) { 
-				main.SimilarityMatrix_1_4.stateAnimation=0;
+				main.MultiLayerMatrix_2.stateAnimation=0;
 				Gene.orderBySumSimilarity(parent);
 			}	
 			else if (items[s].equals("Reading order"))  {
-				main.SimilarityMatrix_1_4.stateAnimation=0;
+				main.MultiLayerMatrix_2.stateAnimation=0;
 				Gene.orderByReadingOrder();
 			}	
 			else if (items[s].equals("Name"))  {
-				main.SimilarityMatrix_1_4.stateAnimation=0;
+				main.MultiLayerMatrix_2.stateAnimation=0;
 				Gene.orderByName();
 			}	
 			else if (items[s].equals("Similarity"))  {
