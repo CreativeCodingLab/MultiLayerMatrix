@@ -13,3 +13,13 @@ Important visualization tasks supported in *MultiLayerMatrix* include allowing a
 
 The next figure shows an example of splitting a cluster of characters into three. The leader for each cluster is also recomputed. 
 ![ScreenShot](https://github.com/CreativeCodingLab/MultiLayerMatrix/blob/master/figures/Figure5.png)
+
+####Pattern discovery and hypothesis generation
+Given one taxonomy with associated characters, analysts would like to zoom into or highlight the branches with certain characters. This feature is particularly interesting to educators and can be used in museums or classrooms as a teaching tool. 
+
+*MultiLayerMatrix* allows users to select a particular branch in the taxonomy and display related characters. The related characters are defined as the characters which contain some data in the taxon-by-character table within the selected branch, such as a tribe, a genus, and a species. The next figure(a) shows the structure of our input taxonomy, the Asteraceae family. This family contains 10 tribes (in the first column), 137 genera (in the second column), and 537 species (in the third column). The links in this taxonomy are color-encoded by tribe. The thickness of the links are relative to the number of taxa belonging to these branches. Genera (second column) and species (last column) are ordered based on the tribes that they belong to. 
+The figure(b) shows an example of selecting a particular species, Californica. As depicted, the Californica species belongs to 4 different genera (Artemisia, Malacothrix, Rafinesquia, and Trixis) which come from 3 different tribes (Anthemideae, Cichorieae, and Mutisieae). 
+Taxonomic names in biology can be complex. At some rank, for example, family, one word name is enough. 
+At sub-ranks, such as tribe or species (sub-species, variety etc.), a binomial naming system is used. For example, a species name has two parts: its genus and its specific epithet. It is not unusual for a specific epithet to be shared by many genera. 
+
+![ScreenShot](https://github.com/CreativeCodingLab/MultiLayerMatrix/blob/master/figures/Figure6ab.png)
