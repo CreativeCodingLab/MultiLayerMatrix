@@ -23,3 +23,6 @@ Taxonomic names in biology can be complex. At some rank, for example, family, on
 At sub-ranks, such as tribe or species (sub-species, variety etc.), a binomial naming system is used. For example, a species name has two parts: its genus and its specific epithet. It is not unusual for a specific epithet to be shared by many genera. 
 
 ![ScreenShot](https://github.com/CreativeCodingLab/MultiLayerMatrix/blob/master/figures/Figure6ab.png)
+
+####Acknowledgments
+This work was funded by the DARPA Big Mechanism Program under ARO contract WF911NF-14-1-0395.
